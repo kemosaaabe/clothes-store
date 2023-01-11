@@ -9,3 +9,14 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}
